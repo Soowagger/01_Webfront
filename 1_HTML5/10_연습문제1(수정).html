@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10_연습문제1</title>
+    </head>
+    <body>
+        <form>
+            고객명 : <input type="text" name="customer"> <br><br>
+            전화번호 : <input type="tel" name="phone"> <br><br>
+            E-mail : <input type="email" name="mail"> <br><br>
+            <label> 피자선택 :
+                <select name="피자이름">
+                        <option>피자를 선택하세요</option>
+                </select>
+            </label>
+        
+            <fieldset>
+                <legend>피자 사이즈</legend>
+                    <input type="radio" name="사이즈" value="S">&nbsp;<label>Small</label> <br><br>
+                    <input type="radio" name="사이즈" value="M">&nbsp;<label>Medium</label> <br><br>
+                    <input type="radio" name="사이즈" value="L">&nbsp;<label>Large</label> <br><br>
+                    <!-- value -->
+            </fieldset>
+        
+            <fieldset>
+                <legend>토핑 선택</legend>
+                    <input type="checkbox" name="토핑" value="베이컨">&nbsp;<label>베이컨</label> <br><br>
+                    <input type="checkbox" name="토핑" value="치즈">&nbsp;<label>치즈</label> <br><br>
+                    <input type="checkbox" name="토핑" value="양파">&nbsp;<label>양파</label> <br><br>
+                    <input type="checkbox" name="토핑" value="버섯">&nbsp;<label>버섯</label> <br><br>
+                    <!-- 3번 문제와 동일 
+                        value 말고 id 입력 시 주소창에 그냥 on으로 되어 value로 대체 
+                    -->
+            </fieldset>
+
+            <br>
+            희망배송시간 : <input type="time" name="시간">     
+            <br><br>
+            배송시 요청사항 : <textarea rows="3" cols="20" name="요청사항"></textarea>
+            <br><br>
+
+            <button>주문하기</button>
+        </form>
+    </body>
+</html>

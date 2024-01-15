@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12_연습문제3</title>
+    </head>
+    <body>
+        <h1>회원가입</h1>
+        <form>
+            <fieldset>
+                <legend>필수 입력 사항</legend>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <td><input type="text" placeholder="아이디 10글자 이내" name="id"></td>
+                            <td colspan="2"><button type="button" id="jb">중복 확인</button></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td colspan="2"><input type="password" name="pw"
+                                placeholder="영문,숫자,특수문자 포함 8자 이상" size="30"></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 확인</th>
+                            <td colspan="2"><input type="password" size="30" name="recheck"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input type="email" name="mail"></td>
+                            <td>
+                                <select>
+                                    <option>naver.com</option>
+                                    <option>daum.net</option>
+                                    <option selected>직접입력</option>
+                                </select>
+                                <!-- name 값 줘야하는지? -->
+                            </td>
+                        </tr>
+                    </table>
+            </fieldset>
+        
+            <fieldset>
+                <legend>추가 정보</legend>
+                    프로필 사진 <input type="file" name="img">
+                    <br><br>
+                    <label> 성별 :
+                        <input type="radio" checked name="성별" value="man"> 남자
+                        <input type="radio" name="성별" value="woman"> 여자
+                    </label>                
+                    <br><br>
+                    생년월일 : <input type="date" style="width: 135px;" name="생일">          
+                    <br><br>     
+                    취미
+                    <br>
+                    <label>
+                        <input type="checkbox" name="hobby" value="야구"> 야구&nbsp;&nbsp;  
+                        <input type="checkbox" name="hobby" value="농구"> 농구&nbsp;&nbsp;
+                        <input type="checkbox" name="hobby" value="축구"> 축구
+                        <br>
+                        <input type="checkbox" checked name="hobby" value="공부"> 공부&nbsp;&nbsp;
+                        <input type="checkbox" name="hobby" value="음악감상"> 음악감상
+                        <br>
+                        <input type="checkbox" name="hobby" value="기타"> 기타
+                        <input type="text" name="상세">
+                        <!-- value 말고 id 입력 시 주소창에 그냥 on으로 되어 value로 대체 -->
+                        <!-- 상세 관련 궁금 -->
+                    </label>
+                    <br><br>
+                    자기소개
+                    <br>
+                    <textarea rows="10" cols="70" style="resize: none;" name="자기소개"></textarea>
+            </fieldset>      
+            <br>      
+            <button>회원가입</button>
+            <button type="reset">다시입력</button>   
+            <button type="button" id="btn">이전으로</button>                     
+        </form>                         
+        <script>
+                // 자바스크립트 영역
+                
+                document.getElementById("btn").addEventListener("click" , function() {
+                    // click 했을 때 어떤 기능을 수행할 지 작성
+                    history.back();                  
+                })
+         </script>
+            <!-- 중복 확인 하는법 모르겠음 / 일단 그냥 버튼에 id까지 지정만 해놈 -->
+
+    </body>
+</html>
