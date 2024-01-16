@@ -1,0 +1,91 @@
+/* 형태 구조 선택자/일반 구조 선택자 이용하기 */
+
+* {
+    box-sizing: border-box;
+}
+
+.container-1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.container-1 > div:nth-of-type(1) {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.container-1 > div:nth-of-type(2) {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 100px;
+}
+
+.container-1 > div:nth-of-type(3) {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 200px;
+}
+
+.container-1 > div:nth-of-type(4) {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+ 
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+}
+
+.container-1 > div:nth-of-type(5) {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+
+}
+
+.container-1 > div:nth-of-type(6) {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.container-1 > div:nth-of-type(7) {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+
+.container-1 > div:nth-of-type(8) {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+}
