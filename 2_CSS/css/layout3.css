@@ -19,7 +19,8 @@ div {
     height: 200px;
     background-color: green;
     
-    position: absolute; /* 배치 무시 */
+    position: absolute; 
+    /* 배치 무시 */
     
     top: 50px;
     left: 50px;

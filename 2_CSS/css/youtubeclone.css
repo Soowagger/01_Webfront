@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     /* 초기 설계할 때 설정해두면 좋음, 추후 삭제 */   
 }
 
@@ -12,7 +12,6 @@ body {
 
 main {
     width: 1300px;
-    margin: auto;
     
 }
 
@@ -22,6 +21,10 @@ header {
     justify-content:center;
     align-items: center;
     margin-top: 8px;
+}
+
+.content > * {
+    margin: auto;
 }
 
 header > section:nth-child(1) {
@@ -73,7 +76,6 @@ header > section:nth-child(5) {
 
 
 /* 검색창 */
-
 .search-voice-area {
     width: 1000px;
     display: flex;
@@ -91,10 +93,13 @@ header > section:nth-child(5) {
     flex-basis: 90%;
     justify-content: center;
     align-items: center;
+    position: relative;
 } 
+
 
 .search-voice-area fieldset > section:nth-of-type(1) { /* 검색창 전체 */
     border-right: 2px solid #ddd;
+    margin: 0;
 }
 
 .search-voice-area section:nth-of-type(2) { /* 마이크 섹션*/
@@ -121,6 +126,8 @@ header > section:nth-child(5) {
     background-color: transparent;
 }
 
+
+
 #keyboard-btn {
     flex-basis: 5%;
     cursor: pointer;
@@ -128,8 +135,16 @@ header > section:nth-child(5) {
     border: none;
     color: darkgrey;
     font-size: 18px;
-    /* margin-left: 140px; */
+    
+    position: absolute;
+
+    right: 80px;
+    top: 2px;
+    bottom: 1px;
 }
+
+
+
 
 #search-btn {
     flex-basis: 10%;
@@ -139,6 +154,7 @@ header > section:nth-child(5) {
     height: 40px;
     border: none;
     background-color: transparent;
+    outline: none;
     
 }
 
@@ -215,5 +231,172 @@ header > section:nth-child(5) {
 } 
 
 .오른쪽 {
-    flex-basis: 25%;
+    display: flex;
 } 
+
+.영상란 {
+    border-radius: 10px;
+}
+
+.content1 {
+    display: flex;
+}
+
+.content1-1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-basis: 50%;
+    width: 100%;
+}
+
+.content1-1 section:nth-child(1) { /* 닉네임, 가입 영역*/
+    display: flex;
+    flex-basis: 45%;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-btn {
+    background-color: white; 
+    font-size: 12px;
+    width: 55px;
+    height: 40px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+}
+
+
+.구독-btn  {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    width: 55px;
+    height: 40px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+}
+
+.content1-1 section:nth-child(2) { /* 구독 섹션 */
+    flex-basis: 10%;
+    display: flex;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.content1-1 section:nth-child(3) {
+    flex-basis: 45%;
+}
+
+.content1-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.content1-2 > section:nth-child(1) {
+    flex-basis: 15%;
+}
+
+.content1-2 > section:nth-child(2) { /* 따봉, 공유 라인 */
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-thumbs-up {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+    border-radius: 150px 0 0 150px;
+    border: 1px solid #ddd;
+}
+
+.fa-thumbs-down {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 50px;
+    height: 30px;
+    border-radius: 0 150px 150px 0;
+    border: 1px solid #ddd;
+}
+
+.fa-share {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.따봉 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.공유 {
+    flex-basis: 40%;
+    display: flex;
+}
+
+
+.content1-2 > section:nth-child(3) {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-arrow-down {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.fa-scissors {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+} 
+
+
+.content1-2 > section:nth-child(4) {
+    flex-basis: 5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.fa-ellipsis {
+    background-color: rgb(248, 248, 248);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 150px 150px 150px 150px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    
+} 
+
+

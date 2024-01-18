@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 
-    /* border: 1px solid black;  */
+    border: 1px solid black; 
     /* 초기 설계할 때 설정해두면 좋음, 추후 삭제 */   
 }
 
