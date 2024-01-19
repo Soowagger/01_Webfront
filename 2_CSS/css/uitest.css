@@ -1,0 +1,328 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+
+    /* border: 1px solid black; */
+}
+
+div {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 1300px;
+    margin: auto; /* 가운데 정렬 */
+}
+
+header {
+    height: 150px;
+    display: flex;
+}
+
+header > section {
+    display: flex;
+}
+
+
+/* 로고 */
+header div:nth-of-type(1) {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#health-logo {
+    width: 150px;
+    height: 100px;
+}
+
+
+
+
+/* 검색창 */
+header div:nth-of-type(2) {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.search-area {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-area fieldset {
+    display: flex;
+    border: 1px solid #f79e31;
+    border-radius: 150px;
+    height: 50px;
+}
+
+.search-bar {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    flex-basis: 90%;
+    width: 300px;
+    margin-top: 4px;
+
+    margin-left: 20px;
+}
+
+.search-btn {
+    background-color: transparent; 
+    flex-basis: 10%;
+    border: none;
+    color: #f79e31;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.up-area {
+    display: flex;
+    /* background-color: red; */
+    margin-top: 100px;
+    margin-left: 50px;
+} 
+
+.icon-area {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-truck, .fa-dumbbell, .fa-calendar-days {
+    font-size: 40px;
+    margin-left: 58px;
+    margin-bottom: 10px;
+    color: #f79e31;
+}
+
+
+
+.icon-area > * {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+/* 상세 */
+header div:nth-of-type(3) {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.detail-area {
+    display: flex;
+}
+
+.shopping-btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.user-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #f79e31;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* nav 영역 */
+nav > ul {
+    margin-top: 80px;
+    display: flex;
+    list-style: none;
+    /* justify-content: flex-end; */
+    height: 50px;
+    border-bottom: 1px solid #f79e31;
+    border-top: 1px solid #f79e31;
+    cursor: pointer;
+}
+
+nav > ul > li {
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+nav a {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+.content {
+    display: flex;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+} 
+
+.content-right {
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+}
+
+.content-right fieldset {
+    display: flex;
+}
+
+
+/* 컨텐츠 왼쪽 */
+.Information > div:nth-of-type(1) {
+    color: #353535;
+    background-color: #f79e31;
+    border: #353535;
+    border: 1px solid #353535;
+}
+
+.Information > div:nth-of-type(2) {
+    color: #353535;
+    background-color: #f79e31;
+    border: 1px solid #353535;
+}
+
+.Information > div:nth-of-type(3) {
+    color: #353535;
+    background-color: #f79e31;
+    border: 1px solid #353535;
+}
+
+.Information > div:nth-of-type(4) {
+    color: #353535;
+    background-color: #f79e31;
+    border: 1px solid #353535;
+}
+
+
+
+.ban1, .ban2, .ban3, .ban4 {
+    line-height: 40px;
+    margin-left: 4px;
+}
+
+
+.Information {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.Information p {
+    margin-left: 18px;
+}
+
+.content-right div:nth-of-type(1) {
+    display: flex;
+    
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.login-btn {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.content-right-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-btn button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login-btn button:hover {
+    background-color: #f79e31;
+}
+
+.content-right-1 fieldset {
+    border: 1px solid #f79e31;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer 영역 */
+footer {
+    margin-top: 100px;
+    height: 200px;
+    background-color: #b38246;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
