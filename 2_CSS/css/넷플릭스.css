@@ -20,7 +20,7 @@ nav {
     height: 60px;
     display: flex;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 nav > ul {
@@ -98,7 +98,7 @@ nav > a:first-child {
 }
 
 .content-box {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
     display: flex;
     flex-direction: column;
