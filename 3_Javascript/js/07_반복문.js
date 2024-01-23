@@ -150,5 +150,20 @@ function executeFn2() {
 // ul 태그로 쭉 나열되게
 // 결과값은 학습 동영상 확인해보고 비교
 
+function executeFn3() {
+    const start = Number(document.getElementById("input3").value); // input 입력값
+    
+    const ul = document.getElementById("result3"); // 결과 출력 ul 요소
 
+    ul.innerHTML = ""; // 이전 출력된 내용 refresh
 
+    for(let num = 1; num <= 9; num++) { // 1~9 반복문 설계
+        
+        multi = (start * num); // input값 * 반복값 결과 요소 만들기
+       
+        // console.log(multi); 정상 여부 확인
+        
+        ul.innerHTML += `<li>${start} X ${num} = ${multi}</li>`;
+        // start(단수) X 1~9 = 단수*1~9
+    }
+}
