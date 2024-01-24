@@ -150,6 +150,7 @@ function executeFn2() {
 // ul 태그로 쭉 나열되게
 // 결과값은 학습 동영상 확인해보고 비교
 
+/*
 function executeFn3() {
     const start = Number(document.getElementById("input3").value); // input 입력값
     
@@ -167,3 +168,141 @@ function executeFn3() {
         // start(단수) X 1~9 = 단수*1~9
     }
 }
+*/
+
+function executeFn3() {
+    const input = Number(document.getElementById("input3").value);
+    
+    const ul = document.getElementById("result3");
+
+    ul.innerHTML = ""; 
+
+    if(input < 2 || input > 9) {
+        alert("2~9 사이만 입력해 주세요");
+        return; // 함수를 종료하고 호출한 곳으로 돌아가는 역할
+                // 함수 종료 정도로만 인식
+    }
+
+    for(let num = 1; num <= 9; num++) {
+        ul.innerHTML += `<li>${input} x ${num} = ${input * num}</li>`;
+    }
+}
+
+/* 다음 모양 출력하기
+12345
+12345
+12345
+12345
+*/
+
+
+function check8() {
+    
+    // 4바퀴 반복하는 for문
+    for(let y = 1; y <= 4; y++) {
+
+        // "12345" 출력하는 구문
+        let str = "";
+        for(let x = 1; x <=5; x++) {
+            str += x;
+        }
+        
+        console.log(str);
+    }
+
+}
+
+
+function check9() {
+
+    for(let y = 1; y <=5; y++) {
+
+
+        let str = "";
+        for(let x = 1; x <= y; x++) {
+            str += x;
+        }
+
+        console.log(str);
+    }
+}
+
+function check16() {
+    
+    // 변수를 선언만 해두기
+    let val; // undefined
+
+    // prompt 창에 취소를 누르기 전까지 반복
+    // == 취소를 누르면 반복하지 않겠다.
+    while(val !== null) {
+        // 동일 비교 연산자
+        // != : 값이 다른 경우
+        // !== : 값, 자료형이 모두 다른 경우 true
+        // === : 값, 자료형이 모두 같은 경우 true
+        
+        val = prompt("입력 후 확인"); // 변수에 promt 값 대입
+        // 확인 -> 입력한 값
+        // 취소 - > null
+        console.log(val);       
+    }
+}
+
+
+// 메뉴 주문하기
+function check17() {
+
+    // 메뉴 가격 
+    const gimbap = 3000;
+    const ramen = 3500;
+    const donkkaseu = 5000;
+
+    // 주문 개수 카운트
+    let gCount = 0; // 김밥
+    let rCount = 0; // 라면
+    let dCount = 0; // 돈까스
+    
+    // prompt로 입력한 값을 저장할 변수
+    let input; //undefined
+    
+    // 확인 -> 입력한 값
+    // 취소 -> null
+
+    while(input !== null) { // 취소 누르기 전까지 반복
+        
+        input = prompt("메뉴 번호를 입력하세요");
+
+        switch(input) {
+            case "1" : gCount++; break;
+            case "2" : rCount++; break;
+            case "3" : dCount++; break;
+            case null : alert("주문 완료!"); break;
+            default : alert("메뉴에 작성된 번호만 입력해주세요"); break;1
+        }
+    }
+    alert(`김밥 : ${gCount}, 라면${rCount}, 돈까스 : ${dCount}`);
+    let sum =(gCount * gimbap) + (rCount * ramen) + (dCount * donkkaseu);
+
+    alert(`총 가격 : ${sum}원`);
+}
+
+
+function check18() {
+
+    // 1부터 10까지 출력    
+    let num = 1;
+    while(num < 11) {
+        console.log(num);
+
+        num++;
+    }
+
+    console.log("---------------")
+
+    // 10부터 1까지 1씩 감소
+    let num1 = 10;
+    while(num1 > 0) {
+        console.log(num1);
+        num1--;
+    }   
+}
+
