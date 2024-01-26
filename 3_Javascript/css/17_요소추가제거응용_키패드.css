@@ -95,12 +95,14 @@ body * {
     border: 1px solid green;
     color: green;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-area button:last-child {
     border: 1px solid gray;
     color: grey;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .number-area button {
@@ -110,17 +112,29 @@ body * {
     font-weight: bold;
 }
 
-.listBox{
+.listBox {
     width: 300px;
     display: flex;
+    flex-direction: column;
 }
 
-.listBox > div {
+.listBox div {
     font-size: 30px;
-    margin-left: 0;
-    display: block;
+    margin-left: 10px;
 }
 
-.listBox .xButton {
-    
+.listBox > div > span:first-child {
+    padding-right: 50px;
 }
+
+.listBox > div > span:nth-of-type(2) {
+    padding-right: 15px;
+    cursor: pointer;
+}
+.listBox > div > span:nth-of-type(3) {
+    cursor: pointer;
+}
+
+
+
+
