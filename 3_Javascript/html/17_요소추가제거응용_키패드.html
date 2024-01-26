@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_키패드만들기</title>
+    <link rel="stylesheet" href="../css/17_요소추가제거응용_키패드.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="header"> <!-- 입력값 출력 부분-->
+                <!-- <span></span> -->
+            </div>
+                
+            <div class ="number-area"> <!-- 번호판 부분 -->
+                <table> <!-- 클릭 안되면 span 추가해보자-->
+                    <tr> <!-- 1행 1, 2, 3-->
+                        <th class="pad">1</th>
+                        <th class="pad">2</th>
+                        <th class="pad">3</th>
+                    </tr>
+                    <tr> <!-- 2행 4, 5, 6 -->
+                        <th class="pad">4</th>
+                        <th class="pad">5</th>
+                        <th class="pad">6</th>
+                    </tr>
+                    <tr><!-- 3행 7, 8, 9-->
+                        <th class="pad">7</th>
+                        <th class="pad">8</th>
+                        <th class="pad">9</th>
+                    </tr>
+                    <tr><!-- 4행 #, 0, * -->
+                        <th class="pad">#</th>
+                        <th class="pad">0</th>
+                        <th class="pad">*</th>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class ="btn-area"> <!-- 추가, 초기화 버튼 부분 -->
+                <div>
+                    <button id="plusBtn">추가</button>
+                    <button id="refreshBtn">초기화</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class = container2> <!-- 출력한 값 노출되는 부분 -->           
+            <div class="listBox">
+                
+                <h2>전화 번호 목록</h2>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="../js/17_요소추가제거응용_키패드.js"></script>
+</body>
+</html>
