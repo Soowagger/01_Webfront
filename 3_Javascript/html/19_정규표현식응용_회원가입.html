@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_정규표현식응용_회원가입</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+        }
+    </style> 
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>회원가입 양식</legend>
+            <table>
+                <tr> <!-- 1행 -->
+                    <td>아이디</td>
+                    <td>
+                        <input type="text" id="inputId">
+                    </td>
+                    <td>
+                        <button>중복확인</button>
+                    </td>
+                </tr>
+                <tr> <!-- 2행 -->
+                    <td>비밀번호</td>
+                    <td>
+                        <input type="number" id="inputPw">
+                    </td>
+                    <td>
+                        <span id="pwResult"> <!-- innerText -->
+
+                        </span>
+                    </td>
+                </tr>
+                <tr> <!-- 3행 -->
+                    <td>비밀번호 확인</td>
+                    <td>
+                        <input type="number" id="inputPwConfirm">
+                    </td>
+                    <td> <!-- 시간남으면 유효성 -->
+
+                    </td>
+                </tr>
+                <tr> <!-- 4행 -->
+                    <td>이름</td>
+                    <td>
+                        <input type="text" id="inputName">
+                    </td>
+                    <td>
+                        <span id="nameResult"> <!-- 이름 유효성 -->
+
+                        </span>
+                    </td>
+                <tr> <!-- 5행 -->
+                    <td>성별</td>
+                    <td>
+                        <label> 남
+                            <input type="radio" name="gender" class="gender"> 
+                        </label>
+                        <label> 여
+                            <input type="radio" name="gender" class="gender">
+                        </label>
+                    </td>
+                </tr> 
+                <tr> <!-- 6행 -->
+                    <td>전화번호</td>
+                    <td>
+                        <input type="number" id="inputTel">
+                    </td>
+                    <td>
+                        <span> <!-- 전화번호 유효성 -->
+
+                        </span>
+                    </td>
+                </tr> 
+                <tr> <!-- 7행 -->
+                    <td>이메일</td>
+                    <td>
+                        <input type="email">
+                    </td>
+                    <td>
+                        <span> <!-- 이메일 유효성 -->
+
+                        </span>
+                    </td>
+                </tr> 
+                <tr> <!-- 8행 -->
+                    <td></td>
+                    <th  colspan="2">
+                        <button>초기화</button>
+                        <button id="signUp">회원가입</button>
+                    </th>
+                </tr> 
+            </table>
+        </fieldset>
+    </form>
+
+
+
+    <script src="../js/19_정규표현식응용_회원가입.js"></script>    
+</body>
+</html>
