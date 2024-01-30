@@ -74,16 +74,30 @@ inputName.addEventListener("keyup", (e) => {
 
 // 4. 회원가입 버튼
 const signUp = document.getElementById("signUp");
-const gender = document.querySelector(".gender");
+const gender = document.getElementsByName("gender");
+const inputTel = document.getElementById("inputTel");
+const regExpTel = /^[0][0-9]{1,2}-[0-9]{3,4}-[0-9]{4}/;
+const form = document.getElementById("form");
 
 signUp.addEventListener("click", () => {
+
     
-    if(gender.value == on) {
-        alert("성별을 입력해주세요");
-    }  
-  
+    if(validate()) {
+        form.preventDefault();
+    }
+    
 });
 
+function validate() {
+    if(gender[0].checked == false && gender[1].checked == false) {
+        alert("성별을 선택해주세요");
+        
+
+    } else if(regExpTel.test(inputTel.value) == false) {
+        alert("전화번호의 형식이 올바르지 않습니다");
+        
+    }
+}
 
 
 

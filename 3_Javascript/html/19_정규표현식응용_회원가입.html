@@ -13,7 +13,7 @@
     </style> 
 </head>
 <body>
-    <form action="#">
+    <form action="#" id="form">
         <fieldset>
             <legend>회원가입 양식</legend>
             <table>
@@ -60,17 +60,17 @@
                     <td>성별</td>
                     <td>
                         <label> 남
-                            <input type="radio" name="gender" class="gender"> 
+                            <input type="radio" name="gender" class="gender" value="man"> 
                         </label>
                         <label> 여
-                            <input type="radio" name="gender" class="gender">
+                            <input type="radio" name="gender" class="gender" value="woman">
                         </label>
                     </td>
                 </tr> 
                 <tr> <!-- 6행 -->
                     <td>전화번호</td>
                     <td>
-                        <input type="number" id="inputTel">
+                        <input type="tel" id="inputTel">
                     </td>
                     <td>
                         <span> <!-- 전화번호 유효성 -->
